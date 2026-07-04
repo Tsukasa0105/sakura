@@ -1,0 +1,751 @@
+/*
+ * Kobetsu Shido Sakura - main stylesheet
+ * Ported 1:1 from the CodePen mock-up (see dist/index.html, dist/style.css),
+ * with the responsive fixes noted under "Theme responsive enhancements" below.
+ */
+
+:root {
+  --bg: #f7f3eb;
+  --bg-soft: #efe7da;
+  --white: #ffffff;
+  --text: #20262d;
+  --muted: #66707a;
+  --line: rgba(32, 38, 45, 0.1);
+
+  --navy: #23364b;
+  --deep-green: #4c6153;
+  --soft-green: #dce5da;
+  --beige: #d9c7ad;
+  --beige-deep: #c9b291;
+
+  --shadow: 0 20px 60px rgba(28, 35, 41, 0.08);
+  --shadow-soft: 0 14px 36px rgba(28, 35, 41, 0.06);
+
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+
+  --container: 1240px;
+  --hero-container: 1380px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    linear-gradient(180deg, #fbf8f2 0%, #f4efe6 100%);
+  font-family:
+    "Hiragino Mincho ProN",
+    "Yu Mincho",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    "Meiryo",
+    sans-serif;
+  line-height: 1.9;
+  letter-spacing: 0.04em;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+iframe {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(calc(100% - 48px), var(--container));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(14px);
+  background: rgba(251, 248, 242, 0.8);
+  border-bottom: 1px solid rgba(32, 38, 45, 0.07);
+}
+
+.header-inner {
+  width: min(calc(100% - 48px), var(--container));
+  margin: 0 auto;
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brand-main {
+  font-size: 1.16rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.brand-sub {
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.menu-label {
+  font-size: 0.74rem;
+  color: var(--deep-green);
+  letter-spacing: 0.24em;
+  padding-right: 6px;
+}
+
+.desktop-nav a,
+.mobile-nav a {
+  position: relative;
+  font-size: 0.92rem;
+  padding-bottom: 4px;
+}
+
+.desktop-nav a::after,
+.mobile-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background: var(--deep-green);
+  transition: width 0.28s ease;
+}
+
+.desktop-nav a:hover::after,
+.mobile-nav a:hover::after {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.menu-toggle-text {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+}
+
+.menu-bars {
+  width: 26px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-bars span {
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background: var(--text);
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0 24px 22px;
+  border-top: 1px solid rgba(32, 38, 45, 0.07);
+  background: rgba(251, 248, 242, 0.96);
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: min(980px, 100vh);
+  display: flex;
+  align-items: center;
+  padding: 120px 0 84px;
+  background:
+    linear-gradient(135deg, rgba(239, 231, 218, 0.92) 0%, rgba(247, 243, 235, 0.92) 48%, rgba(220, 229, 218, 0.9) 100%);
+}
+
+.hero-bg-shape {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.hero-bg-shape-1 {
+  width: 520px;
+  height: 520px;
+  background: rgba(201, 178, 145, 0.18);
+  top: -140px;
+  left: -120px;
+}
+
+.hero-bg-shape-2 {
+  width: 620px;
+  height: 620px;
+  background: rgba(76, 97, 83, 0.12);
+  right: -180px;
+  bottom: -220px;
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: min(calc(100% - 48px), var(--hero-container));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(420px, 0.9fr);
+  gap: 56px;
+  align-items: center;
+}
+
+.hero-copy {
+  max-width: 760px;
+}
+
+.eyebrow,
+.section-label {
+  margin: 0 0 18px;
+  font-size: 0.78rem;
+  color: var(--deep-green);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 5.3vw, 5.4rem);
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+.lead {
+  margin: 28px 0 0;
+  max-width: 720px;
+  font-size: 1rem;
+  color: #49515b;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 26px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  transition: transform 0.22s ease, opacity 0.22s ease, background 0.22s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--navy) 0%, #2f4862 100%);
+  color: var(--white);
+  box-shadow: 0 16px 32px rgba(35, 54, 75, 0.18);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.58);
+  color: var(--navy);
+  border: 1px solid rgba(35, 54, 75, 0.14);
+}
+
+.hero-summary {
+  margin: 42px 0 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(32, 38, 45, 0.08);
+  border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.hero-summary dt {
+  margin-bottom: 8px;
+  font-size: 0.74rem;
+  color: var(--muted);
+  letter-spacing: 0.12em;
+}
+
+.hero-summary dd {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-placeholder {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: rgba(32, 38, 45, 0.72);
+  background: linear-gradient(135deg, #cfcfcf 0%, #bbbbbb 100%);
+  border: 1px solid rgba(32, 38, 45, 0.08);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.image-placeholder span {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.46);
+  border: 1px solid rgba(32, 38, 45, 0.12);
+  font-size: 0.92rem;
+}
+
+.hero-placeholder {
+  max-width: 520px;
+  min-height: 680px;
+}
+
+.section {
+  padding: 110px 0;
+}
+
+.section-soft {
+  background:
+    linear-gradient(180deg, rgba(220, 229, 218, 0.38) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section-access {
+  background:
+    linear-gradient(180deg, rgba(239, 231, 218, 0.34) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.section-heading {
+  max-width: 760px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.section-heading h2 {
+  margin: 0 0 16px;
+  font-size: clamp(1.9rem, 3vw, 3rem);
+  line-height: 1.35;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #505963;
+}
+
+.section-intro {
+  padding-top: 0;
+  margin-top: -36px;
+}
+
+.intro-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.intro-copy,
+.intro-side,
+.news-card,
+.content-card,
+.course-card,
+.access-card {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(32, 38, 45, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-soft);
+}
+
+.intro-copy,
+.intro-side {
+  padding: 34px;
+}
+
+.intro-copy h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.5rem, 2.3vw, 2.2rem);
+  line-height: 1.45;
+}
+
+.intro-copy p,
+.intro-side p {
+  margin: 0;
+  color: #4f5760;
+}
+
+.intro-side {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(220, 229, 218, 0.72), rgba(239, 231, 218, 0.72));
+}
+
+.news-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.news-image {
+  min-height: 100%;
+  height: 100%;
+  min-height: 540px;
+}
+
+.news-list {
+  display: grid;
+  gap: 20px;
+}
+
+.news-card,
+.course-card,
+.access-card {
+  padding: 30px;
+}
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(76, 97, 83, 0.12);
+  color: var(--deep-green);
+}
+
+.news-card h3,
+.course-card h3,
+.access-card h3 {
+  margin: 0 0 12px;
+  line-height: 1.55;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.teacher-image {
+  min-height: 520px;
+}
+
+.content-card {
+  padding: 42px;
+}
+
+.content-card h2 {
+  margin: 0 0 18px;
+  font-size: clamp(1.8rem, 2.7vw, 2.8rem);
+  line-height: 1.4;
+}
+
+.content-card p {
+  margin: 0 0 16px;
+  color: #4e5660;
+}
+
+.signature {
+  margin-top: 24px !important;
+  font-weight: 700;
+  color: var(--navy) !important;
+  letter-spacing: 0.1em;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.course-card {
+  min-height: 100%;
+}
+
+.access-grid {
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.info-list {
+  margin: 20px 0 0;
+  display: grid;
+  gap: 18px;
+}
+
+.info-list div {
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.info-list div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.info-list dt {
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+}
+
+.info-list dd {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.map-wrap {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(32, 38, 45, 0.08);
+  box-shadow: var(--shadow);
+  background: #d9d9d9;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  border: 0;
+}
+
+.site-footer {
+  padding: 30px 0;
+  border-top: 1px solid rgba(32, 38, 45, 0.08);
+  background: rgba(255, 255, 255, 0.62);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-title {
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.copyright {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Blog / single post support (not present in the original one-page mock-up) */
+.entry-content > * + * {
+  margin-top: 16px;
+}
+
+.entry-content img {
+  border-radius: var(--radius-md);
+}
+
+.news-card a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1080px) {
+  .hero-inner,
+  .intro-panel,
+  .news-layout,
+  .split-grid,
+  .access-grid,
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    justify-content: stretch;
+  }
+
+  .hero-placeholder {
+    max-width: none;
+    min-height: 420px;
+  }
+
+  .news-image,
+  .teacher-image {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 960px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 96px 0 64px;
+  }
+
+  .hero-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 88px 0;
+  }
+
+  .content-card {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container,
+  .header-inner {
+    width: min(calc(100% - 28px), var(--container));
+  }
+
+  .header-inner {
+    min-height: 78px;
+  }
+
+  .brand-main {
+    font-size: 1rem;
+  }
+
+  .brand-sub {
+    font-size: 0.68rem;
+  }
+
+  .hero {
+    padding: 84px 0 52px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .intro-copy,
+  .intro-side,
+  .news-card,
+  .content-card,
+  .course-card,
+  .access-card {
+    padding: 24px;
+  }
+
+  .map-wrap iframe {
+    min-height: 380px;
+  }
+}
+
+/*
+ * Theme responsive enhancements
+ * (gaps in the original CodePen export that we fixed for production use)
+ */
+
+/* 1. The exported HTML had no viewport meta tag, so mobile browsers rendered
+      the desktop layout zoomed out. Fixed in header.php; scroll-margin-top
+      below keeps in-page anchor links from landing under the sticky header. */
+.site-header ~ main [id],
+main [id] {
+  scroll-margin-top: 108px;
+}
+
+/* 2. Course cards jumped straight from 3 columns to 1 column at 1080px,
+      leaving an awkward single-column stretch on tablets. Added a 2-column
+      step for the in-between range. */
+@media (max-width: 1080px) and (min-width: 641px) {
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 3. The hero image placeholder stayed 420px tall even on small phones,
+      pushing the headline and CTAs far below the fold. Shrunk it further
+      under 640px. */
+@media (max-width: 640px) {
+  .hero-placeholder {
+    min-height: 260px;
+  }
+
+  main [id] {
+    scroll-margin-top: 98px;
+  }
+}
