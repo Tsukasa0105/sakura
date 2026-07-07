@@ -7,7 +7,7 @@
 	<div class="container intro-panel">
 		<div class="intro-copy">
 			<p class="section-label">ABOUT</p>
-			<h2>少人数だからこそできる、きめ細かな学習サポート</h2>
+			<h2>個別指導だからこそできる、きめ細かな学習サポート</h2>
 			<p>
 				生徒それぞれの理解度や課題に目を向けながら、
 				日々の学習習慣づくり、定期テスト対策、受験に向けた準備まで、

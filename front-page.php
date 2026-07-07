@@ -15,6 +15,7 @@ get_header();
 	get_template_part( 'template-parts/section', 'teacher' );
 	get_template_part( 'template-parts/section', 'course' );
 	get_template_part( 'template-parts/section', 'access' );
+	get_template_part( 'template-parts/section', 'contact' );
 	?>
 </main>
 

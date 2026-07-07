@@ -19,38 +19,49 @@
 				<dl class="info-list">
 					<div>
 						<dt>塾名</dt>
-						<dd>個別指導さくら</dd>
+						<dd>個別指導 さくら</dd>
 					</div>
 					<div>
 						<dt>所在地</dt>
-						<dd>神奈川県藤沢市辻堂</dd>
+						<dd>藤沢市辻堂3-12-10 ハイム桜花102</dd>
 					</div>
 					<div>
-						<dt>講師</dt>
-						<dd>渡邉 貴幸</dd>
+						<dt>アクセス</dt>
+						<dd>辻堂駅南口より徒歩7分<br>駐輪スペース有</dd>
 					</div>
 					<div>
-						<dt>対象</dt>
-						<dd>中学生・高校生</dd>
+						<dt>電話番号</dt>
+						<dd><a href="tel:08014354888">080-1435-4888</a></dd>
 					</div>
 					<div>
-						<dt>授業形態</dt>
-						<dd>先生1人と生徒2人の個別指導</dd>
+						<dt>代表</dt>
+						<dd>渡邊</dd>
 					</div>
 					<div>
-						<dt>対応内容</dt>
-						<dd>定期テスト対策・受験対策・春期講習・夏期講習・冬期講習</dd>
+						<dt>通塾生の主な出身校</dt>
+						<dd>
+							高浜中、明治中、赤羽根中、浜須賀中、日大藤沢中、平塚中等教育学校<br>
+							小田原高校、座間高校、秦野高校、七里ガ浜高校、湘南学園高校、アレセイア湘南高校など
+						</dd>
+					</div>
+					<div>
+						<dt>合格実績（過去3年）</dt>
+						<dd>
+							大阪大学、長崎大学、早稲田大学、東京理科大学、青山学院大学、明治大学、中央大学、上智大学、昭和薬科大学、東洋大学その他多数<br>
+							小田原高校、茅ヶ崎北陵高校、鶴嶺高校、七里ガ浜高校、茅ヶ崎高校、鵠沼高校、アレセイア湘南高校などその他<br>
+							鎌倉女学院中学校、聖園女学院中学校
+						</dd>
 					</div>
 				</dl>
 			</div>
 
 			<div class="map-wrap">
 				<iframe
-					src="https://www.google.com/maps?q=神奈川県藤沢市辻堂&output=embed"
+					src="https://www.google.com/maps?q=藤沢市辻堂3-12-10+ハイム桜花102&output=embed"
 					loading="lazy"
 					allowfullscreen
 					referrerpolicy="no-referrer-when-downgrade"
-					title="個別指導さくら 周辺地図"
+					title="個別指導 さくら 周辺地図"
 				></iframe>
 			</div>
 		</div>

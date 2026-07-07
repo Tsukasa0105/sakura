@@ -22,7 +22,7 @@
 				それぞれの理解度を見ながら必要な場面でしっかり声をかけ、
 				安心して質問できる空気づくりを大切にしています。
 			</p>
-			<p class="signature">渡邉 貴幸</p>
+			<p class="signature">代表 渡邊</p>
 		</div>
 	</div>
 </section>

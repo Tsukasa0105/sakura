@@ -17,8 +17,8 @@
 <header class="site-header" id="top">
 	<div class="header-inner">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand">
-			<span class="brand-main"><?php bloginfo( 'name' ); ?></span>
-			<span class="brand-sub"><?php bloginfo( 'description' ); ?></span>
+			<span class="brand-main">個別指導 さくら</span>
+			<span class="brand-sub">藤沢市辻堂3-12-10 ハイム桜花102</span>
 		</a>
 
 		<nav class="desktop-nav" aria-label="MENU">
@@ -28,6 +28,7 @@
 			<a href="#teacher">講師挨拶</a>
 			<a href="#course">コース</a>
 			<a href="#access">アクセス</a>
+			<a href="#contact">お問い合わせ</a>
 		</nav>
 
 		<button class="menu-toggle" id="menuToggle" aria-label="MENU" aria-expanded="false" aria-controls="mobileNav">
@@ -46,5 +47,6 @@
 		<a href="#teacher">講師挨拶</a>
 		<a href="#course">コース</a>
 		<a href="#access">アクセス</a>
+		<a href="#contact">お問い合わせ</a>
 	</nav>
 </header>
