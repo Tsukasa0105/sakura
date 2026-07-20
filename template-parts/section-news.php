@@ -27,7 +27,13 @@ $sakura_news_query = new WP_Query(
 
 		<div class="news-layout">
 			<div class="image-placeholder news-image">
-				<span>画像が入ります</span>
+				<img
+					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/news-lesson.jpg' ); ?>"
+					alt="講師と生徒による授業の様子"
+					width="1200"
+					height="799"
+					loading="lazy"
+				>
 			</div>
 
 			<div class="news-list">

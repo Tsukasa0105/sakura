@@ -44,7 +44,14 @@
 
 		<div class="hero-visual">
 			<div class="image-placeholder hero-placeholder">
-				<span>画像が入ります</span>
+				<img
+					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero-students.jpg' ); ?>"
+					alt="個別指導さくらで学習に取り組む生徒たち"
+					width="1200"
+					height="801"
+					loading="eager"
+					fetchpriority="high"
+				>
 			</div>
 		</div>
 	</div>

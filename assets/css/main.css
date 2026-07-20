@@ -351,6 +351,13 @@ img {
   font-size: 0.92rem;
 }
 
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .hero-placeholder {
   max-width: 520px;
   min-height: 680px;

@@ -6,7 +6,13 @@
 <section class="section section-soft" id="teacher">
 	<div class="container split-grid">
 		<div class="image-placeholder teacher-image">
-			<span>画像が入ります</span>
+			<img
+				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/teacher-representative.jpg' ); ?>"
+				alt="代表 渡邊"
+				width="645"
+				height="430"
+				loading="lazy"
+			>
 		</div>
 
 		<div class="content-card">
