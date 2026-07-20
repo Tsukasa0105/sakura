@@ -37,7 +37,7 @@
 				</div>
 				<div>
 					<dt>対応内容</dt>
-					<dd>定期テスト対策・受験対策・期間講習、<span class="nowrap">英検2級</span>、<span class="nowrap">英検準1級対策</span></dd>
+					<dd><span class="nowrap">定期テスト対策</span>・<span class="nowrap">受験対策</span>・<span class="nowrap">期間講習</span>、<span class="nowrap">英検2級</span>、<span class="nowrap">英検準1級対策</span></dd>
 				</div>
 			</dl>
 		</div>
