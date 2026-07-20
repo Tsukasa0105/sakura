@@ -1,9 +1,8 @@
 <?php
 /**
  * Contact section: LINE QR code + phone number.
- *
- * TODO: replace '#' below with the actual LINE friend-add URL once available.
  */
+$sakura_line_url = 'https://line.me/ti/p/RNj6m2Y_64';
 ?>
 <section class="section section-contact" id="contact">
 	<div class="container">
@@ -18,8 +17,14 @@
 		<div class="contact-grid">
 			<div class="contact-card">
 				<h3>LINEで相談する</h3>
-				<a href="#" class="image-placeholder qr-placeholder">
-					<span>QRコードが入ります</span>
+				<a href="<?php echo esc_url( $sakura_line_url ); ?>" class="qr-placeholder" target="_blank" rel="noopener">
+					<img
+						src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/line-qr.png' ); ?>"
+						alt="LINE友だち追加用QRコード"
+						width="240"
+						height="240"
+						loading="lazy"
+					>
 				</a>
 				<p>QRコードを読み取って友だち追加してください。</p>
 			</div>
