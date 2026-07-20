@@ -23,15 +23,15 @@
 					</div>
 					<div>
 						<dt>所在地</dt>
-						<dd>藤沢市辻堂3-12-10 ハイム桜花102 湘南ホスピタル近く</dd>
+						<dd><span class="nowrap">藤沢市辻堂3-12-10</span> <span class="nowrap">ハイム桜花102</span> <span class="nowrap">湘南ホスピタル近く</span></dd>
 					</div>
 					<div>
 						<dt>アクセス</dt>
-						<dd>辻堂駅南口より徒歩7分<br>駐輪スペース有</dd>
+						<dd><span class="nowrap">辻堂駅南口より徒歩7分</span><br><span class="nowrap">駐輪スペース有</span></dd>
 					</div>
 					<div>
 						<dt>電話番号</dt>
-						<dd><a href="tel:08014354888">080-1435-4888</a></dd>
+						<dd><a href="tel:08014354888" class="nowrap">080-1435-4888</a></dd>
 					</div>
 					<div>
 						<dt>代表</dt>
@@ -45,7 +45,7 @@
 						</dd>
 					</div>
 					<div>
-						<dt>合格実績（過去3年）</dt>
+						<dt>合格実績（<span class="nowrap">過去3年</span>）</dt>
 						<dd>
 							大阪大学、長崎大学、早稲田大学、東京理科大学、青山学院大学、明治大学、中央大学、上智大学、昭和薬科大学、東洋大学その他多数<br>
 							小田原高校、茅ヶ崎北陵高校、鶴嶺高校、七里ガ浜高校、茅ヶ崎高校、鵠沼高校、アレセイア湘南高校などその他<br>

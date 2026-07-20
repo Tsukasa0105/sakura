@@ -29,15 +29,15 @@
 			<dl class="hero-summary">
 				<div>
 					<dt>対象</dt>
-					<dd>中学生・高校生・既卒・中学受験生（算数・理科）</dd>
+					<dd>中学生・高校生・既卒・<span class="nowrap">中学受験生（算数・理科）</span></dd>
 				</div>
 				<div>
 					<dt>授業体制</dt>
-					<dd>先生1人 × 生徒2人</dd>
+					<dd><span class="nowrap">先生1人</span> × <span class="nowrap">生徒2人</span></dd>
 				</div>
 				<div>
 					<dt>対応内容</dt>
-					<dd>定期テスト対策・受験対策・期間講習、英検2級、英検準1級対策</dd>
+					<dd>定期テスト対策・受験対策・期間講習、<span class="nowrap">英検2級</span>、<span class="nowrap">英検準1級対策</span></dd>
 				</div>
 			</dl>
 		</div>

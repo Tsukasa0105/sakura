@@ -31,7 +31,7 @@ $sakura_line_url = 'https://line.me/ti/p/RNj6m2Y_64';
 
 			<div class="contact-card contact-card-phone">
 				<h3>お電話でのお問い合わせ</h3>
-				<a href="tel:08014354888" class="btn btn-primary phone-link">080-1435-4888</a>
+				<a href="tel:08014354888" class="btn btn-primary phone-link nowrap">080-1435-4888</a>
 				<p>受付時間はお気軽にお問い合わせください。</p>
 			</div>
 		</div>

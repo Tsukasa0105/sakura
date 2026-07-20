@@ -18,7 +18,7 @@
 	<div class="header-inner">
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="brand">
 			<span class="brand-main">個別指導 さくら</span>
-			<span class="brand-sub">藤沢市辻堂3-12-10 ハイム桜花102 湘南ホスピタル近く</span>
+			<span class="brand-sub"><span class="nowrap">藤沢市辻堂3-12-10</span> <span class="nowrap">ハイム桜花102</span> <span class="nowrap">湘南ホスピタル近く</span></span>
 		</a>
 
 		<nav class="desktop-nav" aria-label="MENU">

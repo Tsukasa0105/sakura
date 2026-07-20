@@ -61,6 +61,10 @@ a {
   text-decoration: none;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 iframe {
   display: block;
 }
@@ -110,6 +114,7 @@ img {
   font-size: 0.75rem;
   color: var(--muted);
   letter-spacing: 0.08em;
+  text-wrap: balance;
 }
 
 .desktop-nav {
@@ -256,6 +261,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.06em;
   font-weight: 700;
+  text-wrap: balance;
 }
 
 .lead {
@@ -387,6 +393,7 @@ img {
   margin: 0 0 16px;
   font-size: clamp(1.9rem, 3vw, 3rem);
   line-height: 1.35;
+  text-wrap: balance;
 }
 
 .section-heading p {
@@ -427,6 +434,7 @@ img {
   margin: 0 0 14px;
   font-size: clamp(1.5rem, 2.3vw, 2.2rem);
   line-height: 1.45;
+  text-wrap: balance;
 }
 
 .intro-copy p,
@@ -511,6 +519,7 @@ img {
   margin: 0 0 18px;
   font-size: clamp(1.8rem, 2.7vw, 2.8rem);
   line-height: 1.4;
+  text-wrap: balance;
 }
 
 .content-card p {
@@ -569,6 +578,7 @@ img {
   margin: 0;
   font-weight: 600;
   line-height: 1.8;
+  text-wrap: balance;
 }
 
 .map-wrap {
@@ -665,6 +675,11 @@ img {
   font-weight: 700;
 }
 
+.footer-address {
+  margin: 0;
+  text-wrap: balance;
+}
+
 .copyright {
   color: var(--muted);
   font-size: 0.9rem;
@@ -738,7 +753,8 @@ img {
 
 @media (max-width: 640px) {
   .container,
-  .header-inner {
+  .header-inner,
+  .hero-inner {
     width: min(calc(100% - 28px), var(--container));
   }
 
