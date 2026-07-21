@@ -4,18 +4,8 @@
  */
 ?>
 <section class="section section-soft" id="teacher">
-	<div class="container split-grid">
-		<div class="image-placeholder teacher-image">
-			<img
-				src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/teacher-representative.jpg' ); ?>"
-				alt="代表 渡邊"
-				width="645"
-				height="430"
-				loading="lazy"
-			>
-		</div>
-
-		<div class="content-card">
+	<div class="container">
+		<div class="content-card content-card-solo">
 			<p class="section-label">MESSAGE</p>
 			<h2>講師挨拶</h2>
 			<p>

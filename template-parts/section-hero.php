@@ -46,9 +46,9 @@
 			<div class="image-placeholder hero-placeholder">
 				<img
 					src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/hero-students.jpg' ); ?>"
-					alt="個別指導さくらで学習に取り組む生徒たち"
-					width="1200"
-					height="801"
+					alt="個別指導さくらの自習ブースで学習に取り組む生徒たち"
+					width="1400"
+					height="1054"
 					loading="eager"
 					fetchpriority="high"
 				>

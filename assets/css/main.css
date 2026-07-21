@@ -257,7 +257,7 @@ img {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.4rem, 5.3vw, 5.4rem);
+  font-size: clamp(2.2rem, 3.4vw, 3.4rem);
   line-height: 1.2;
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -365,8 +365,8 @@ img {
 }
 
 .hero-placeholder {
-  max-width: 520px;
-  min-height: 680px;
+  max-width: 620px;
+  aspect-ratio: 4 / 3;
 }
 
 .section {
@@ -500,19 +500,13 @@ img {
   line-height: 1.55;
 }
 
-.split-grid {
-  display: grid;
-  grid-template-columns: 0.92fr 1.08fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.teacher-image {
-  min-height: 520px;
-}
-
 .content-card {
   padding: 42px;
+}
+
+.content-card-solo {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .content-card h2 {
@@ -702,7 +696,6 @@ img {
   .hero-inner,
   .intro-panel,
   .news-layout,
-  .split-grid,
   .access-grid,
   .course-grid,
   .contact-grid {
@@ -715,11 +708,9 @@ img {
 
   .hero-placeholder {
     max-width: none;
-    min-height: 420px;
   }
 
-  .news-image,
-  .teacher-image {
+  .news-image {
     min-height: 320px;
   }
 }
@@ -822,14 +813,8 @@ main [id] {
   }
 }
 
-/* 3. The hero image placeholder stayed 420px tall even on small phones,
-      pushing the headline and CTAs far below the fold. Shrunk it further
-      under 640px. */
+/* 3. Extra scroll offset for the sticky header on small phones. */
 @media (max-width: 640px) {
-  .hero-placeholder {
-    min-height: 260px;
-  }
-
   main [id] {
     scroll-margin-top: 98px;
   }
