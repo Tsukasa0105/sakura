@@ -17,7 +17,7 @@
 			</h1>
 			<p class="lead">
 				個別指導さくらは、神奈川県藤沢市辻堂にある中学生・高校生を対象とした個人の学習塾です。
-				すべての授業を、先生1人と生徒2人の体制で行い、定期テスト対策から受験対策まで、
+				授業を、先生1人と生徒2人の体制で行い、定期テスト対策から受験対策まで、
 				一人ひとりに合わせた落ち着いた指導を大切にしています。
 			</p>
 
@@ -37,7 +37,7 @@
 				</div>
 				<div>
 					<dt>対応内容</dt>
-					<dd><span class="nowrap">定期テスト対策</span>・<span class="nowrap">受験対策</span>・<span class="nowrap">期間講習</span>、<span class="nowrap">英検2級</span>、<span class="nowrap">英検準1級対策</span></dd>
+					<dd><span class="nowrap">定期テスト対策</span>・<span class="nowrap">受験対策</span>・<span class="nowrap">期間講習</span>、<span class="nowrap">英検対策</span></dd>
 				</div>
 			</dl>
 		</div>

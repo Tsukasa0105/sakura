@@ -619,6 +619,16 @@ img {
   color: #4f5760;
 }
 
+.contact-hours-title {
+  margin-top: 20px !important;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.contact-hours {
+  margin-top: 6px !important;
+}
+
 .qr-placeholder {
   display: inline-grid;
   place-items: center;

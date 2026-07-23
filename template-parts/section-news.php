@@ -20,9 +20,6 @@ $sakura_news_query = new WP_Query(
 		<div class="section-heading">
 			<p class="section-label">NEWS</p>
 			<h2>講習のご案内</h2>
-			<p>
-				こちらはCMSで更新投稿する想定のエリアです。春期・夏期・冬期講習などのお知らせ掲載に対応できます。
-			</p>
 		</div>
 
 		<div class="news-layout">
