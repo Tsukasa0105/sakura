@@ -29,15 +29,11 @@
 			<dl class="hero-summary">
 				<div>
 					<dt>対象</dt>
-					<dd>中学生・高校生・既卒・<span class="nowrap">中学受験生（算数・理科）</span></dd>
+					<dd>中学生・高校生・既卒・中学受験生</dd>
 				</div>
 				<div>
 					<dt>授業体制</dt>
 					<dd><span class="nowrap">先生1人</span> × <span class="nowrap">生徒2人</span></dd>
-				</div>
-				<div>
-					<dt>対応内容</dt>
-					<dd><span class="nowrap">定期テスト対策</span>・<span class="nowrap">受験対策</span>・<span class="nowrap">期間講習</span>、<span class="nowrap">英検対策</span></dd>
 				</div>
 			</dl>
 		</div>

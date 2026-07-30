@@ -308,11 +308,12 @@ img {
 .hero-summary {
   margin: 42px 0 0;
   padding: 24px;
+  max-width: 460px;
   background: rgba(255, 255, 255, 0.58);
   border: 1px solid rgba(32, 38, 45, 0.08);
   border-radius: var(--radius-md);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   box-shadow: var(--shadow-soft);
 }
