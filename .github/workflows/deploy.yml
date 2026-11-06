@@ -1,9 +1,12 @@
 name: Deploy theme to XServer
 
+# PAUSED 2026-11-06: an existing "sakura" theme already living at the
+# deploy target (wp-content/themes/sakura/) was overwritten by this
+# workflow. Auto-deploy-on-push is disabled until that's sorted out and
+# we've confirmed what should actually be deployed there. Re-enable by
+# restoring the `push:` trigger below once confirmed safe.
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch: {}
 
 jobs:
   deploy:
